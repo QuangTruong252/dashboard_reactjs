@@ -1,5 +1,7 @@
 import React from 'react';
-
+import logo from '../img/uit.png';
+import user from '../img/user.jpg';
+import sw from '../img/switch.png';
 function Sidebar() {
   return (
     <>
@@ -7,7 +9,7 @@ function Sidebar() {
         {/* User basic info */}
         <div className="sidebar-brand">
           <div className="brand-flex">
-            <img src="../img/uit.png" width="30px" alt="user" />
+            <img src={logo} width="30px" alt="user" />
             <div className="brand-icons">
               <span className="las la-bell" />
               <span className="las la-user-circle" />
@@ -16,7 +18,7 @@ function Sidebar() {
         </div>
         <div className="sidebar-main">
           <div className="sidebar-user">
-            <img src="./img/user.jpg" alt />
+            <img src={user} alt />
             <div>
               <h3>Quang Truong</h3>
               <p>18521572@gm.uit.edu.vn</p>
